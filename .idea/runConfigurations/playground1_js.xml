@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="playground1.js" type="NodeJSConfigurationType" nameIsGenerated="true" node-parameters="-r source-map-support/register --trace-warnings" path-to-js-file="playground1.js" working-dir="$PROJECT_DIR$/lib/cjs">
+    <method v="2" />
+  </configuration>
+</component>
