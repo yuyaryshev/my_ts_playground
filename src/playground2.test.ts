@@ -8,8 +8,8 @@ interface UnfinishedFoo {
 }
 
 // Utility function to extend a class with additional methods
-function extendClass<BaseClassT extends UnfinishedFoo>(baseClass: BaseClassT) {
-    return class extends baseClass {
+function extendClass<BaseClass extends new (...args: any[]) => UnfinishedFoo>(Base: BaseClass) {
+    return class extends Base {
         extMethod3(a: number, c: number): string {
             return `method3_res=${this.method1(a)} c=${c}`;
         }
